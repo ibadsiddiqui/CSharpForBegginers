@@ -1,0 +1,2 @@
+C:\Users\musha_000\Desktop\ibad\languages\Microsoft Virtual Academy\lesson1\HelloWorld\HelloWorld\bin\Release\HelloWorld.exe.config
+C:\Users\musha_000\Desktop\ibad\languages\Microsoft Virtual Academy\lesson1\HelloWorld\HelloWorld\obj\Release\HelloWorld.csprojResolveAssemblyReference.cache
