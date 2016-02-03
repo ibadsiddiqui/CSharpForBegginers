@@ -1,1 +1,7 @@
 C:\Users\musha_000\Desktop\ibad\languages\Microsoft Virtual Academy\lesson1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\musha_000\Desktop\ibad\Microsoft Virtual Academy\Learning C#\My lessons\lesson1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\musha_000\Desktop\ibad\Microsoft Virtual Academy\Learning C#\My lessons\lesson1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\musha_000\Desktop\ibad\Microsoft Virtual Academy\Learning C#\My lessons\lesson1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\musha_000\Desktop\ibad\Microsoft Virtual Academy\Learning C#\My lessons\lesson1\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+C:\Users\musha_000\Desktop\ibad\Microsoft Virtual Academy\Learning C#\My lessons\lesson1\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\musha_000\Desktop\ibad\Microsoft Virtual Academy\Learning C#\My lessons\lesson1\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
