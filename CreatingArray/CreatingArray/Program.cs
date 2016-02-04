@@ -34,11 +34,23 @@ namespace CreatingArray
 
             //Another way of String Decleration is:
 
-            String[] names = new String[] {"ibad","Ali","Areeb","Arbab","Sherry"};
+            /*String[] names = new String[] {"ibad","Ali","Areeb","Arbab","Sherry"};
             foreach (String name in names)
             {
                 Console.WriteLine(name);
 
+            }*/
+
+            String me = "You can't get enough out" + 
+                        " what you want out of life" + 
+                        " if you help enough people to get what they want";
+
+            char[] charArray = me.ToCharArray();
+            Array.Reverse(charArray);
+
+            foreach (var item in charArray)
+            {
+                Console.Write(item);
             }
             
             Console.Read();
