@@ -10,7 +10,7 @@ namespace CreatingAndCallingMethod
     {
         static void Main(string[] args)
         {
-            string h1 = hello();
+            string h1 = Me("Ibad");
             Console.WriteLine(h1);
 
             Console.Read();
@@ -19,6 +19,10 @@ namespace CreatingAndCallingMethod
         private static String hello()
         {
             return "Hello World";
+        }
+        private static String Me(String name)
+        {
+            return String.Format("Hello {0}!",name);
         }
     }
 }
