@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
+
 namespace ReadTextWhileProject
 {
     class Program
     {
         static void Main(string[] args)
         {
-            StreamReader myReader = new StreamReader("Values.txt");
+            //If we use StreamReader.. it is  also ok
+            System.IO.StreamReader myReader = new StreamReader("Values.txt");
             String line = "";
 
             while(line != null)
