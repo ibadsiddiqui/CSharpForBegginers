@@ -13,6 +13,7 @@ namespace CreatingAndCallingMethod
             string h1 = hello();
             Console.WriteLine(h1);
 
+            Console.Read();
         }
 
         private static String hello()
