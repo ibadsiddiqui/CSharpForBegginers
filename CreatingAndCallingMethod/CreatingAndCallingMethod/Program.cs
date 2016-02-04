@@ -10,13 +10,14 @@ namespace CreatingAndCallingMethod
     {
         static void Main(string[] args)
         {
-            string h1 = Me("Ibad");
-            Console.WriteLine(h1);
+            //string h1 = Me("Ibad"); 
+            //Console.WriteLine(h1);
+            Console.WriteLine(Me("Ibad"));
 
             Console.Read();
         }
 
-        private static String hello()
+        private static String Me()
         {
             return "Hello World";
         }
