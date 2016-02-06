@@ -16,6 +16,8 @@ namespace ObjectLifeTime
             Car OtherCar = myCar;
 
             Car newCar = new Car("Ford","Escape",2000,"Black");
+
+            Car.mymethod(); //created without an object            
         }
     }
     class Car
@@ -41,12 +43,17 @@ namespace ObjectLifeTime
             Color = color;
         }
 
-        public Car(String someOtherInputParameter, String model, int year, string color)
+        /*public Car(String someOtherInputParameter, String model, int year, string color)
         {
             Make = someOtherInputParameter;
             Year = year;
             Model = model;
             Color = color;
+        }*/
+        
+        public static void mymethod() // the word static  does not need an object to be called in main()
+        {
+
         }
     }
 }
