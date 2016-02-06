@@ -17,6 +17,15 @@ namespace UnderstandingInheritance
             myCar.Color = "Black";
 
             printCarDetails(myCar);
+
+            Truck myTruck = new Truck();
+            myTruck.Make = "Ford";
+            myTruck.Model = "F950";
+            myTruck.Year = 2006;
+            myTruck.Color = "Black";
+            myTruck.TowingCapacity = 20000;
+            printCarDetails(myTruck);
+
             Console.Read();
         }
 
@@ -41,5 +50,12 @@ namespace UnderstandingInheritance
             this.Year,
             this.Color);
         }
+    }
+
+    class Truck : Car
+    {
+        public int TowingCapacity { get; set; }
+
+    
     }
 }
