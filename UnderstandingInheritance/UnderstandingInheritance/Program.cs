@@ -13,49 +13,74 @@ namespace UnderstandingInheritance
             Car myCar = new Car();
             myCar.Make = "BMW";
             myCar.Model = "745li";
-            myCar.Year = 2005;
             myCar.Color = "Black";
+            myCar.Year = 2005;
+            //myCar.TowingCapacity = 1200;
 
-            printCarDetails(myCar);
+            printVehicleDetails(myCar);
+
 
             Truck myTruck = new Truck();
+
             myTruck.Make = "Ford";
             myTruck.Model = "F950";
             myTruck.Year = 2006;
             myTruck.Color = "Black";
-            myTruck.TowingCapacity = 20000;
-            printCarDetails(myTruck);
+            myTruck.TowingCapacity = 1200;
+            printVehicleDetails(myTruck);
 
-            Console.Read();
+            Console.ReadLine();
         }
 
-        private static void printCarDetails(Car car)
+        private static void printVehicleDetails(Vehicle vehicle)
         {
-            Console.WriteLine("Here are the Car's details {0}",car.FormatMe());
-
+            Console.WriteLine("Here are the vehcile's details: {0}",
+                vehicle.FormatMe());
         }
+
     }
 
-    class Car
+    abstract class Vehicle
     {
         public string Make { get; set; }
-        public String Model { get; set; }
+        public string Model { get; set; }
         public int Year { get; set; }
-        public String Color { get; set; }
+        public string Color { get; set; }
 
-        public String FormatMe()
+        public abstract string FormatMe();
+    }
+
+    class Car : Vehicle
+    {
+        public override string FormatMe()
         {
-            return String.Format("{0} - {1} - {2} - {3} ", this.Make,
-            this.Model,
-            this.Year,
-            this.Color);
+            return String.Format("{0} - {1} - {2} - {3}",
+                this.Make,
+                this.Model,
+                this.Color,
+                this.Year);
         }
     }
 
-    class Truck : Car
+    sealed class Truck : Vehicle
     {
         public int TowingCapacity { get; set; }
 
-    
+        public override string FormatMe()
+        {
+            return String.Format("{0} - {1} - {2} Towing units",
+                this.Make,
+                this.Model,
+                this.TowingCapacity);
+        }
+
     }
+
+    /*
+    class Semi : Truck
+    {
+
+    }
+    */
+
 }
